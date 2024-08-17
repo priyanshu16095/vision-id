@@ -9,7 +9,7 @@ function Navbar() {
       <p className="navtitle">VisionID</p>
       <p className="navlink">FAQ</p>
       <p className="navlink">Contact</p>
-      <MenuIcon />
+      <div className="hide"><MenuIcon /></div>
     </div>
   )
 }
