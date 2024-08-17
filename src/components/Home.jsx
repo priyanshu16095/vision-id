@@ -30,8 +30,8 @@ function Hero() {
     return (
         <div className="hero flex-v gap-lg text-center">
             <div className="flex-v gap">
-                <p className="font-lg bold">Face Recognition System</p>
-                <p className="font bold">Your face, your key to ultimate security.</p>
+                <p className="font-lg">Face Recognition System</p>
+                <p className="font">Your face, your key to ultimate security.</p>
             </div>
             <div className='flex-v gap text-center'>
                 <p className="font">Upload photo and find out where images are published</p>
@@ -45,7 +45,7 @@ function Hero() {
 function Help() {
     return (
         <div className='help flex-v gap-lg'>
-            <p className="font-lg bold">How VisionID can help you?</p>
+            <p className="font-lg">How VisionID can help you?</p>
             <div className="help__text font flex-v gap">
                 <p>PimEyes is an online face search engine that goes through the Internet to find pictures containing given faces. PimEyes uses face recognition search technologies to perform a reverse image search.</p>
                 <p>Find a face and check where the image appears online. Our face finder helps you find a face and protect your privacy. Facial recognition online system allows you to search by image.</p>
@@ -85,7 +85,7 @@ function Accordion({ title, data }) {
                             <div className="accordion__item cursor flex-v gap-sm" key={index}>
                                 <div className="accordion__header flex-s gap-sm" onClick={() => handleMultiSelection(index)}>
                                     <p className="font">{item.question}</p>
-                                    {multipleId.indexOf(index) === index ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+                                    {multipleId.indexOf(index) !== -1 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
                                 </div>
                                 {show(index) && <p className="accordion__answer">{item.answer}</p>}
                             </div>
