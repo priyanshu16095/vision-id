@@ -30,11 +30,11 @@ function Hero() {
     return (
         <div className="hero flex-v gap-lg text-center">
             <div className="flex-v gap">
-                <p className="font-lg">Face Recognition System</p>
+                <p className="font-lg bold">Face Recognition System</p>
                 <p className="font">Your face, your key to ultimate security.</p>
             </div>
             <div className='flex-v gap text-center'>
-                <p className="font">Upload photo and find out where images are published</p>
+                <p className="">Upload photo and find out where images are published</p>
                 <button className='upload__button'><div className="flex-h gap-md"><CameraAltIcon /> UPLOAD PHOTO</div> <SearchIcon /></button>
                 <p>Or you can take a photo with the device’s camera. Don’t worry, we will not store it!</p>
             </div>
@@ -48,7 +48,7 @@ function Help() {
             <p className="font-lg">How VisionID can help you?</p>
             <div className="help__text font flex-v gap">
                 <p>PimEyes is an online face search engine that goes through the Internet to find pictures containing given faces. PimEyes uses face recognition search technologies to perform a reverse image search.</p>
-                <p>Find a face and check where the image appears online. Our face finder helps you find a face and protect your privacy. Facial recognition online system allows you to search by image.</p>
+                <p>Find face to check where the image appears online. Our face finder helps protect your privacy. Facial recognition online system allows you to search by image.</p>
                 <p>PimEyes is a face picture search and photo search engine available for everyone. It is a great tool to audit copyright infringement.</p>
                 <p>Using the latest technologies, artificial intelligence and machine learning, we help you find your pictures on the Internet and defend yourself from scammers, identity thieves, or people who use your image illegally.</p>
             </div>
