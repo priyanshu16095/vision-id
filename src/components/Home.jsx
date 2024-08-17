@@ -29,14 +29,14 @@ export default Home
 function Hero() {
     return (
         <div className="hero flex-v gap-lg text-center">
-            <div className="flex-v gap">
+            <div className="flex-v gap-sm">
                 <p className="font-lg bold">Face Recognition System</p>
                 <p className="font">Your face, your key to ultimate security.</p>
             </div>
             <div className='flex-v gap text-center'>
-                <p className="">Upload photo and find out where images are published</p>
                 <button className='upload__button'><div className="flex-h gap-md"><CameraAltIcon /> UPLOAD PHOTO</div> <SearchIcon /></button>
-                <p>Or you can take a photo with the device’s camera. Don’t worry, we will not store it!</p>
+                {/* <p className="">Upload photo and find out where images are published</p> */}
+                {/* <p>Or you can take a photo with the device’s camera. Don’t worry, we will not store it!</p> */}
             </div>
         </div>
     )
