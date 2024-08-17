@@ -117,3 +117,9 @@ button {
     display: none !important;
   }
 }
+
+@media (max-width: 900px) {
+  .font-lg {
+    font-size: 2rem;
+  }
+}

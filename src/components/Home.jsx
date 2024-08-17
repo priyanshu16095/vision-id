@@ -85,7 +85,7 @@ function Accordion({ title, data }) {
                         return (
                             <div className="accordion__item cursor flex-v gap-sm" key={index}>
                                 <div className="accordion__header flex-s gap-sm" onClick={() => handleMultiSelection(index)}>
-                                    <p className="font bold">{item.question}</p>
+                                    <p className="font">{item.question}</p>
                                     {multipleId.indexOf(index) === index ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
                                 </div>
                                 {show(index) && <p className="accordion__answer">{item.answer}</p>}
